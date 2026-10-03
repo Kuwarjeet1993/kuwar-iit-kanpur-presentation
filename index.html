@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kuwarjeet Sidana | IIT Kanpur Presentation</title>
+  <style>
+    :root {
+      --navy: #14233f;
+      --blue: #2d6cdf;
+      --text: #1e2430;
+      --muted: #576274;
+      --bg: #f3f6fb;
+      --white: #ffffff;
+      --line: #dfe7f3;
+      --accent: #e8f1ff;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      background: linear-gradient(135deg, #eef4ff 0%, #f8fafc 100%);
+      color: var(--text);
+    }
+    .deck {
+      max-width: 1200px;
+      margin: 32px auto;
+      padding: 20px;
+    }
+    .slide {
+      background: var(--white);
+      border: 1px solid var(--line);
+      border-radius: 22px;
+      box-shadow: 0 12px 32px rgba(20, 35, 63, 0.08);
+      padding: 48px 52px 36px;
+      margin-bottom: 30px;
+      min-height: 620px;
+    }
+    .slide.dark {
+      background: var(--navy);
+      color: var(--white);
+    }
+    .kicker {
+      display: inline-block;
+      font-size: 13px;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--blue);
+      font-weight: 700;
+      margin-bottom: 12px;
+    }
+    .dark .kicker { color: #a9c8ff; }
+    h1, h2, h3, p, li { margin-top: 0; }
+    h1 {
+      font-size: 52px;
+      line-height: 1.1;
+      margin: 0 0 20px;
+      letter-spacing: -0.04em;
+    }
+    h2 {
+      font-size: 34px;
+      line-height: 1.2;
+      margin-bottom: 18px;
+      letter-spacing: -0.03em;
+    }
+    h3 {
+      font-size: 28px;
+      margin-bottom: 12px;
+      color: var(--navy);
+    }
+    .dark h3 { color: #dde9ff; }
+    .subtitle {
+      font-size: 22px;
+      color: var(--muted);
+      margin-bottom: 20px;
+    }
+    .dark .subtitle { color: rgba(255,255,255,0.8); }
+    .two-col {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 28px;
+      margin-top: 24px;
+    }
+    ul {
+      padding-left: 24px;
+      font-size: 21px;
+      line-height: 1.7;
+      color: var(--text);
+    }
+    .dark ul, .dark p, .dark li { color: rgba(255,255,255,.93); }
+    .hero {
+      display: grid;
+      grid-template-columns: 1.5fr 0.8fr;
+      gap: 24px;
+      align-items: center;
+    }
+    .hero-card {
+      background: linear-gradient(135deg, var(--blue), #4b8af7);
+      border-radius: 18px;
+      min-height: 220px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 24px;
+      color: white;
+      font-weight: 700;
+      font-size: 30px;
+      line-height: 1.2;
+    }
+    .badge-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 18px;
+    }
+    .badge {
+      background: var(--accent);
+      color: var(--navy);
+      border-radius: 999px;
+      padding: 10px 16px;
+      font-size: 16px;
+      font-weight: 600;
+    }
+    .dark .badge {
+      background: rgba(255,255,255,0.08);
+      color: white;
+    }
+    .quote {
+      margin-top: 20px;
+      padding: 18px 20px;
+      border-left: 5px solid var(--blue);
+      background: #f7faff;
+      border-radius: 10px;
+      font-size: 22px;
+      line-height: 1.5;
+      color: var(--navy);
+    }
+    .dark .quote {
+      background: rgba(255,255,255,0.06);
+      color: #edf4ff;
+      border-left-color: #a9c8ff;
+    }
+    .footer-line {
+      margin-top: 26px;
+      font-size: 15px;
+      color: var(--muted);
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+    .dark .footer-line { color: rgba(255,255,255,.72); }
+    @media (max-width: 900px) {
+      .slide { padding: 30px 22px 24px; min-height: auto; }
+      .hero, .two-col { grid-template-columns: 1fr; }
+      h1 { font-size: 36px; }
+      h2 { font-size: 26px; }
+      ul { font-size: 18px; }
+      .hero-card { min-height: 160px; font-size: 22px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="deck">
+
+    <section class="slide dark">
+      <div class="kicker">IIT Kanpur Presentation</div>
+      <div class="hero">
+        <div>
+          <h1>Kuwarjeet Sidana</h1>
+          <div class="subtitle">Building growth. Building brands. Building the next wave of leaders.</div>
+          <div class="badge-row">
+            <span class="badge">Founder, Multithumbs</span>
+            <span class="badge">Host, Growthhacksbykuwar</span>
+            <span class="badge">Growth marketer</span>
+          </div>
+        </div>
+        <div class="hero-card">IIT Kanpur<br/>Presentation</div>
+      </div>
+      <div class="footer-line">Growth systems • AI • Brand strategy • Revenue impact</div>
+    </section>
+
+    <section class="slide">
+      <div class="kicker">01</div>
+      <h2>Who I am</h2>
+      <ul>
+        <li>Founder, Multithumbs</li>
+        <li>Host, Growthhacksbykuwar</li>
+        <li>Growth marketer with 7+ years of experience</li>
+        <li>Former digital growth leader at Fortis Healthcare</li>
+        <li>Scaled Glamyo Health from ~₹40L to ~₹7Cr/month</li>
+        <li>Guest lecturer and growth storyteller for founder and leadership audiences</li>
+      </ul>
+      <div class="quote">I work at the intersection of growth, systems, AI, and personal branding.</div>
+    </section>
+
+    <section class="slide">
+      <div class="kicker">02</div>
+      <h2>My journey</h2>
+      <ul>
+        <li>Started in healthcare growth, where the real challenge was scaling trust and conversion together.</li>
+        <li>Learned that growth is more than marketing: it is product-market fit, UX, sales systems, and operational discipline.</li>
+        <li>Built digital growth engines that convert attention into measurable revenue.</li>
+        <li>Today, I build growth systems for brands and leadership brands for founders and CXOs.</li>
+      </ul>
+    </section>
+
+    <section class="slide">
+      <div class="kicker">03</div>
+      <h2>What I build</h2>
+      <div class="two-col">
+        <div>
+          <h3>Multithumbs</h3>
+          <p>A growth marketing studio helping brands scale end-to-end.</p>
+          <ul>
+            <li>Performance marketing</li>
+            <li>UX/UI design</li>
+            <li>Vibe coding & MVP builds</li>
+            <li>CRM + CMS systems</li>
+            <li>AI chatbots & AI WhatsApp agents</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Growthhacksbykuwar</h3>
+          <p>A podcast and personal-brand platform for founders, CXOs, and leaders.</p>
+          <ul>
+            <li>50+ episodes published</li>
+            <li>1.9M+ YouTube views</li>
+            <li>978K+ Instagram views</li>
+            <li>Content that turns expertise into influence</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="slide">
+      <div class="kicker">04</div>
+      <h2>The core idea: growth is a system</h2>
+      <ul>
+        <li>Ads bring traffic, but the landing page under-converts.</li>
+        <li>CRM is poorly structured, so high-intent leads are missed.</li>
+        <li>Sales follow-up is inconsistent and slow.</li>
+        <li>AI support is missing when buyers want immediate responses.</li>
+        <li>I solve this with a full-funnel approach: attract, convert, automate, and scale.</li>
+      </ul>
+    </section>
+
+    <section class="slide">
+      <div class="kicker">05</div>
+      <h2>Proof of impact</h2>
+      <ul>
+        <li>₹10Cr+ revenue generated from Google and Meta campaigns at Fortis Healthcare</li>
+        <li>17.5x monthly revenue growth at Glamyo Health</li>
+        <li>400% organic traffic uplift after a website rebuild</li>
+        <li>+5% conversion lift with AI voice, chat, and WhatsApp automation</li>
+        <li>Built systems that improve acquisition, conversion, and retention</li>
+      </ul>
+      <div class="quote">I do not just market brands; I build revenue systems around them.</div>
+    </section>
+
+    <section class="slide dark">
+      <div class="kicker">06</div>
+      <h2>Why this matters to IIT Kanpur</h2>
+      <ul>
+        <li>IIT Kanpur represents the spirit of innovation, deep thinking, and execution.</li>
+        <li>The next wave of impact will come from people who combine technical depth with business thinking and AI-driven execution.</li>
+        <li>My work sits at the intersection of product, growth, founder storytelling, automation, and measurable commercial impact.</li>
+        <li>I am excited to learn from the IIT Kanpur ecosystem and contribute by helping founders turn good ideas into scalable businesses.</li>
+      </ul>
+    </section>
+
+    <section class="slide">
+      <div class="kicker">07</div>
+      <h2>Closing message</h2>
+      <ul>
+        <li>I focus on growth, systems, stronger leadership, and clearer market presence.</li>
+        <li>Whether it is a healthcare brand, startup, founder visibility, or AI workflow, I look for one outcome: measurable momentum.</li>
+        <li>Thank you for your time — I would be glad to connect with the IIT Kanpur community.</li>
+      </ul>
+    </section>
+
+  </div>
+</body>
+</html>
